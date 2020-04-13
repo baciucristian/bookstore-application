@@ -66,5 +66,10 @@ namespace Bookstore
             //excursieForm f2 = new excursieForm();
             //f2.Show();
         }
+
+        private void bunifuGradientPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
