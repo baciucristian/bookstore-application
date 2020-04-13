@@ -23,4 +23,4 @@ Application language: *Romanian* | College project @ 2020
 * 250MB Hard disk space
 
 ### License
-Bookstore Desktop App is licensed under the [MIT]() license.
+Bookstore Desktop App is licensed under the [MIT](https://github.com/baciucristian/bookstore-application/blob/master/LICENSE) license.
