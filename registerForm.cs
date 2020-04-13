@@ -41,23 +41,23 @@ namespace Bookstore
             dragging = false;
         }
 
-        private void pictureBox3_Click(object sender, EventArgs e)
+        private void register()
         {
-            // Punem intr-o variabila datele din textbox
+            // Extract data from TextBox
             string username = alphaBlendTextBox2.Text;
             string password = alphaBlendTextBox3.Text;
             string password2 = alphaBlendTextBox4.Text;
 
-            // Conexiunea cu baza de date 
-            SqlConnection sqlcon = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\School\Anul III\Practica Anul III\Bookstore\Bookstore.mdf;Integrated Security=True");
+            // Database connection
+            SqlConnection sqlcon = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\School\Anul III\C#\Lucrare individuală\travel-application\Bookstore.mdf;Integrated Security=True");
             sqlcon.Open();
 
-            // Validarea datelor 
+            // Data validation
             if (!string.IsNullOrEmpty(username) || !string.IsNullOrEmpty(password) || !string.IsNullOrEmpty(password2))
             {
                 if (password == password2)
                 {
-                    // Verificarea in baza de date un username existent
+                    // Check in database if exists identical username
                     string query = "SELECT Username FROM Users WHERE Username = '" + username.Trim() + "'";
                     SqlDataAdapter sda = new SqlDataAdapter(query, sqlcon);
                     DataTable checkDuplicates = new DataTable();
@@ -65,7 +65,8 @@ namespace Bookstore
                     if (checkDuplicates.Rows.Count == 1)
                     {
                         MessageBox.Show("Username existent!", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    } else
+                    }
+                    else
                     {
                         string queryInsert = "INSERT INTO Users (Username, Password) VALUES (@Username, @Password)";
                         SqlCommand command = new SqlCommand(queryInsert, sqlcon);
@@ -74,14 +75,21 @@ namespace Bookstore
                         command.ExecuteNonQuery();
                         MessageBox.Show("Cont înregistrat cu succes!", "Autentificare reușită!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
-                } else
+                }
+                else
                 {
                     MessageBox.Show("Parolele nu coincid!", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-            } else
+            }
+            else
             {
                 MessageBox.Show("Nu puteți lăsa câmpuri goale!", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            register();
         }
 
         private void pictureBox6_Click(object sender, EventArgs e)
@@ -106,6 +114,11 @@ namespace Bookstore
 
                 if (result == DialogResult.Yes)
                     Application.Exit();
+            }
+
+            if (e.KeyCode == Keys.Enter)
+            {
+                register();
             }
         }
     }
