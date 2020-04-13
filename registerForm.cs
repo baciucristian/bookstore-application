@@ -49,7 +49,7 @@ namespace Bookstore
             string password2 = alphaBlendTextBox4.Text;
 
             // Database connection
-            SqlConnection sqlcon = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\School\Anul III\C#\Lucrare individuală\travel-application\Bookstore.mdf;Integrated Security=True");
+            SqlConnection sqlcon = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\School\Anul III\Practica Anul III\bookstore-application\Bookstore.mdf;Integrated Security=True");
             sqlcon.Open();
 
             // Data validation
@@ -73,7 +73,10 @@ namespace Bookstore
                         command.Parameters.AddWithValue("@Username", username);
                         command.Parameters.AddWithValue("@Password", password);
                         command.ExecuteNonQuery();
-                        MessageBox.Show("Cont înregistrat cu succes!", "Autentificare reușită!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Cont înregistrat cu succes!", "Înregistrare reușită!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        this.Hide();
+                        loginForm f3 = new loginForm();
+                        f3.Show();
                     }
                 }
                 else

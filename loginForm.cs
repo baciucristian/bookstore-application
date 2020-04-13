@@ -18,6 +18,40 @@ namespace Bookstore
             InitializeComponent();
         }
 
+        private void login()
+        {
+            // Extract data from TextBox
+            string username = alphaBlendTextBox4.Text;
+            string password = alphaBlendTextBox5.Text;
+
+            // Validation of data
+            if (username == "" || password == "")
+            {
+                MessageBox.Show("Nu puteti lăsa câmpuri goale!", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                // Database connection
+                SqlConnection sqlcon = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\School\Anul III\Practica Anul III\bookstore-application\Bookstore.mdf;Integrated Security=True");
+
+                // Login System
+                string query = "SELECT * FROM Users WHERE Username = '" + username.Trim() + "'AND Password = '" + password + "'";
+                SqlDataAdapter sda = new SqlDataAdapter(query, sqlcon);
+                DataTable dt = new DataTable();
+                sda.Fill(dt);
+                if (dt.Rows.Count == 1)
+                {
+                    this.Hide();
+                    menuForm f5 = new menuForm();
+                    f5.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Datele introduse sunt incorecte!", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
         private void bunifuGradientPanel1_Paint(object sender, PaintEventArgs e)
         {
 
@@ -41,7 +75,7 @@ namespace Bookstore
             }
             if (e.KeyCode == Keys.Enter)
             {
-                //pictureBox1.Click(pictureBox1, EventArgs.Empty);
+                login();
             }
         }
         private bool dragging = false;
@@ -77,35 +111,7 @@ namespace Bookstore
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            // Punem intr-o variabila datele din textbox
-            string username = alphaBlendTextBox4.Text;
-            string password = alphaBlendTextBox5.Text;
-            
-            // Validarea datelor 
-            if (username == "" || password == "")
-            {
-                MessageBox.Show("Nu puteti lăsa câmpuri goale!", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            } else {
-                // Conexiunea cu baza de date 
-                SqlConnection sqlcon = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\School\Anul III\Practica Anul III\Bookstore\Bookstore.mdf;Integrated Security=True");
-                
-                // Sistemul de login
-                string query = "SELECT * FROM Users WHERE Username = '" + username.Trim() + "'AND Password = '" + password + "'";
-                SqlDataAdapter sda = new SqlDataAdapter(query, sqlcon);
-                DataTable dt = new DataTable();
-                sda.Fill(dt);
-                if (dt.Rows.Count == 1)
-                {
-                    MessageBox.Show("Conectat!", "OK", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                    this.Close();
-                    //this.Hide();
-                    // Form5 f5 = new Form5();
-                    // f5.Show();
-                } else
-                {
-                    MessageBox.Show("Datele introduse sunt incorecte!", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
+            login();
         }
 
         private void loginForm_MouseClick(object sender, MouseEventArgs e)
