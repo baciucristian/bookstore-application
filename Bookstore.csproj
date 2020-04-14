@@ -99,6 +99,18 @@
     <Compile Include="cartiForm.Designer.cs">
       <DependentUpon>cartiForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="cartiLimbaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cartiLimbaForm.Designer.cs">
+      <DependentUpon>cartiLimbaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cartiLimbaFormSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cartiLimbaFormSearch.Designer.cs">
+      <DependentUpon>cartiLimbaFormSearch.cs</DependentUpon>
+    </Compile>
     <Compile Include="furnizoriForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -136,6 +148,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="cartiForm.resx">
       <DependentUpon>cartiForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cartiLimbaForm.resx">
+      <DependentUpon>cartiLimbaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cartiLimbaFormSearch.resx">
+      <DependentUpon>cartiLimbaFormSearch.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="furnizoriForm.resx">
       <DependentUpon>furnizoriForm.cs</DependentUpon>
