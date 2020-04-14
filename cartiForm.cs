@@ -18,16 +18,15 @@ namespace Bookstore
             InitializeComponent();
         }
 
-        // Database connection
-        SqlConnection sqlcon = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\School\Anul III\Practica Anul III\bookstore - application\Bookstore.mdf;Integrated Security=True");
-        
+        // Show Carti table in DataGridView
         private void cartiForm_Load(object sender, EventArgs e)
         {
-            // Show Carti table in DataGridView
-            //string query = "SELECT denumireCarte, numeAutor, anCarte, pretCarte, denumireFurnizor FROM Carti ";
-            //query += "INNER JOIN Autori ON Carti.idAutor = Autori.idAutor ";
-            //query += "INNER JOIN Furnizori ON Carti.idFurnizor = Furnizori.idFurnizor";
-            string query = "SELECT * FROM Carti";
+            // Database connection
+            SqlConnection sqlcon = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\School\Anul III\Practica Anul III\bookstore-application\Bookstore.mdf;Integrated Security=True");
+            
+            string query = "SELECT denumireCarte, numeAutor, anCarte, pretCarte, denumireFurnizor FROM Carti ";
+            query += "INNER JOIN Autori ON Carti.idAutor = Autori.idAutor ";
+            query += "INNER JOIN Furnizori ON Carti.idFurnizor = Furnizori.idFurnizor";
             SqlDataAdapter sda = new SqlDataAdapter(query, sqlcon);
             DataTable dt = new DataTable();
             sda.Fill(dt);

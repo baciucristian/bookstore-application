@@ -87,11 +87,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="autoriForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="autoriForm.Designer.cs">
+      <DependentUpon>autoriForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="cartiForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="cartiForm.Designer.cs">
       <DependentUpon>cartiForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="furnizoriForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="furnizoriForm.Designer.cs">
+      <DependentUpon>furnizoriForm.cs</DependentUpon>
     </Compile>
     <Compile Include="loginForm.cs">
       <SubType>Form</SubType>
@@ -119,8 +131,14 @@
     <Compile Include="showForm.Designer.cs">
       <DependentUpon>showForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="autoriForm.resx">
+      <DependentUpon>autoriForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="cartiForm.resx">
       <DependentUpon>cartiForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="furnizoriForm.resx">
+      <DependentUpon>furnizoriForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="loginForm.resx">
       <DependentUpon>loginForm.cs</DependentUpon>
