@@ -55,9 +55,9 @@ namespace Bookstore
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            //this.Hide();
-            //posterForm f1 = new posterForm();
-            //f1.Show();
+            this.Hide();
+            showForm f = new showForm();
+            f.Show();
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
