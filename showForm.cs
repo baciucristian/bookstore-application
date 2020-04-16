@@ -100,5 +100,12 @@ namespace Bookstore
             openChildForm(new cartiLimbaForm());
             hideSubMenu();
         }
+
+        private void btnMaximal_Click(object sender, EventArgs e)
+        {
+            panel2.Hide();
+            openChildForm(new furnMax());
+            hideSubMenu();
+        }
     }
 }

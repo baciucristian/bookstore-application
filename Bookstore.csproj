@@ -111,6 +111,12 @@
     <Compile Include="furnizoriForm.Designer.cs">
       <DependentUpon>furnizoriForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="furnMax.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="furnMax.Designer.cs">
+      <DependentUpon>furnMax.cs</DependentUpon>
+    </Compile>
     <Compile Include="loginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -148,6 +154,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="furnizoriForm.resx">
       <DependentUpon>furnizoriForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="furnMax.resx">
+      <DependentUpon>furnMax.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="loginForm.resx">
       <DependentUpon>loginForm.cs</DependentUpon>

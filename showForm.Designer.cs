@@ -135,6 +135,7 @@
             this.btnMaximal.Text = "Furn. cu cărți maximale";
             this.btnMaximal.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMaximal.UseVisualStyleBackColor = true;
+            this.btnMaximal.Click += new System.EventHandler(this.btnMaximal_Click);
             // 
             // panelTabele
             // 
