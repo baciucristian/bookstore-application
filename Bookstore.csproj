@@ -117,6 +117,18 @@
     <Compile Include="furnMax.Designer.cs">
       <DependentUpon>furnMax.cs</DependentUpon>
     </Compile>
+    <Compile Include="listaAutor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="listaAutor.Designer.cs">
+      <DependentUpon>listaAutor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="listaRomana.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="listaRomana.Designer.cs">
+      <DependentUpon>listaRomana.cs</DependentUpon>
+    </Compile>
     <Compile Include="loginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -163,6 +175,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="furnMax.resx">
       <DependentUpon>furnMax.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="listaAutor.resx">
+      <DependentUpon>listaAutor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="listaRomana.resx">
+      <DependentUpon>listaRomana.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="loginForm.resx">
       <DependentUpon>loginForm.cs</DependentUpon>
