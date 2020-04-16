@@ -64,14 +64,14 @@ INSERT INTO Autori (numeAutor, dataAutor, genAutor) VALUES
 	,(N'Luís de Camões', '01.12.1524', 'M')
 GO
 INSERT INTO Carti (idFurnizor, denumireCarte, idAutor, anCarte, limbaCarte, pretCarte, nrExemplare) VALUES
-    (3, N'Amintiri din copilărie', 1, '1892', N'Română', 52, 0)
-    ,(1, N'Luceafărul', 2,'1883', N'Română', 86, 6)
-	,(4, N'Letopisețul Țării Moldovei', 3, 1661, N'Română', 138, 3)
-	,(5, N'Viața Lumii', 3, 1672, N'Română', 102, 14)
-	,(2, N'Plimbarea de mai în Iaşi', 4, 1872, N'Română', 83, 20)
-	,(2, 'Capra cu trei iezi', 1, 1875, N'Română', 52, 32)
-	,(1, N'La mormântul lui Aron Pumnul', 2, 1886, N'Română', 130, 10)
-	,(1, 'Lusiadele', 6, 1572, N'Portugheză', 240, 14)
+    (3, N'Amintiri din copilărie', 1, '1999', N'Română', 52, 0)
+    ,(1, N'Luceafărul', 2,'2000', N'Română', 86, 6)
+	,(4, N'Letopisețul Țării Moldovei', 3, 2000, N'Română', 138, 3)
+	,(5, N'Viața Lumii', 3, 2001, N'Română', 102, 14)
+	,(2, N'Plimbarea de mai în Iaşi', 4, 2001, N'Română', 83, 20)
+	,(2, 'Capra cu trei iezi', 1, 2001, N'Română', 52, 32)
+	,(1, N'La mormântul lui Aron Pumnul', 2, 2019, N'Română', 130, 10)
+	,(1, 'Lusiadele', 6, 2016, N'Portugheză', 240, 14)
 GO
 INSERT INTO Users (username, password) VALUES 
     ('admin', 'admin')
