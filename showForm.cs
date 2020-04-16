@@ -17,6 +17,7 @@ namespace Bookstore
         public showForm()
         {
             InitializeComponent();
+            customizeDesign();
         }
 
         #region Design
@@ -25,29 +26,13 @@ namespace Bookstore
         public void openChildForm(Form childForm)
         {
             if (activeForm != null)
-                activeForm.BringToFront();
+                activeForm.Close();
             activeForm = childForm;
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
             childForm.Dock = DockStyle.Fill;
             panelChildForm.Controls.Add(childForm);
             panelChildForm.Tag = childForm;
-            childForm.BringToFront();
-            childForm.Show();
-        }
-
-
-
-        private void openChildFormPanel2(Form childForm)
-        {
-            if (activeForm != null)
-                activeForm.BringToFront();
-            activeForm = childForm;
-            childForm.TopLevel = false;
-            childForm.FormBorderStyle = FormBorderStyle.None;
-            childForm.Dock = DockStyle.Fill;
-            panel2.Controls.Add(childForm);
-            panel2.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
         }
@@ -124,26 +109,29 @@ namespace Bookstore
 
         private void button2_Click(object sender, EventArgs e)
         {
+            panel2.Hide();
             openChildForm(new furnizoriForm());
             hideSubMenu();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
+            panel2.Hide();
             openChildForm(new autoriForm());
             hideSubMenu();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
+            panel2.Hide();
             openChildForm(new cartiForm());
             hideSubMenu();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
+            panel2.Hide();
             openChildForm(new cartiLimbaForm());
-            openChildFormPanel2(new cartiLimbaFormSearch());
             hideSubMenu();
         }
 
