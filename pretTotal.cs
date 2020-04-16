@@ -47,6 +47,13 @@ namespace Bookstore
 
         private void button1_Click(object sender, EventArgs e)
         {
+            pictureBox1.Hide();
+            title1.Hide();
+            title2.Hide();
+            yearLabel.Hide();
+            moneyLabel.Hide();
+            label2.Hide();
+            pictureBox3.Hide();
             pictureBox2.Hide();
             // TextBox variable
             string inputYear = textBox1.Text;
