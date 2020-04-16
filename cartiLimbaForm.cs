@@ -23,6 +23,7 @@ namespace Bookstore
 
         private void button1_Click(object sender, EventArgs e)
         {
+            pictureBox2.Hide();
             dataGridView1.Hide();
             // TextBox variable
             string inputWord = textBox1.Text;
@@ -44,7 +45,7 @@ namespace Bookstore
             if (dt.Rows.Count == 0)
             {   
                 pictureBox1.Show();
-            } else
+            } else 
                 dataGridView1.Show();
         }
 
