@@ -24,7 +24,7 @@ namespace Bookstore
             // Database connection
             SqlConnection sqlcon = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\School\Anul III\Practica Anul III\bookstore-application\Bookstore.mdf;Integrated Security=True");
             
-            string query = "SELECT denumireCarte, numeAutor, anCarte, limbaCarte, pretCarte, denumireFurnizor FROM Carti ";
+            string query = "SELECT denumireCarte, numeAutor, anCarte, limbaCarte, pretCarte, denumireFurnizor, nrExemplare FROM Carti ";
             query += "INNER JOIN Autori ON Carti.idAutor = Autori.idAutor ";
             query += "INNER JOIN Furnizori ON Carti.idFurnizor = Furnizori.idFurnizor";
             SqlDataAdapter sda = new SqlDataAdapter(query, sqlcon);
