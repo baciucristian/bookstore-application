@@ -76,6 +76,9 @@ namespace Bookstore
             if (e.KeyCode == Keys.Enter)
             {
                 login();
+
+                // Disable beep sound
+                e.Handled = e.SuppressKeyPress = true;
             }
         }
         private bool dragging = false;

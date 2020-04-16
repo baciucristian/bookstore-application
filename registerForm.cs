@@ -122,6 +122,9 @@ namespace Bookstore
             if (e.KeyCode == Keys.Enter)
             {
                 register();
+
+                // Disable beep sound
+                e.Handled = e.SuppressKeyPress = true;
             }
         }
     }
