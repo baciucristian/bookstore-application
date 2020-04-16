@@ -17,7 +17,6 @@ namespace Bookstore
         public showForm()
         {
             InitializeComponent();
-            customizeDesign();
         }
 
         #region Design
@@ -38,10 +37,6 @@ namespace Bookstore
         }
 
         // Submenu design
-        private void customizeDesign()
-        {
-            panelTabele.Visible = false;
-        }
 
         private void hideSubMenu()
         {
@@ -61,26 +56,6 @@ namespace Bookstore
         }
         #endregion
 
-        private void showForm_MouseDown(object sender, MouseEventArgs e)
-        {
-        }
-
-        private void showForm_MouseMove(object sender, MouseEventArgs e)
-        {
-        }
-
-        private void showForm_MouseUp(object sender, MouseEventArgs e)
-        {
-        }
-
-        private void showForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void showForm_KeyDown(object sender, KeyEventArgs e)
-        {
-        }
 
         private void tabControl1_KeyDown(object sender, KeyEventArgs e)
         {
@@ -92,15 +67,6 @@ namespace Bookstore
             }
         }
 
-        private void pictureBox4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnMaximal_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void btnTabele_Click(object sender, EventArgs e)
         {
@@ -134,11 +100,5 @@ namespace Bookstore
             openChildForm(new cartiLimbaForm());
             hideSubMenu();
         }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
     }
 }
