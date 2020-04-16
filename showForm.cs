@@ -77,35 +77,36 @@ namespace Bookstore
         {
             panel2.Hide();
             openChildForm(new furnizoriForm());
-            hideSubMenu();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             panel2.Hide();
             openChildForm(new autoriForm());
-            hideSubMenu();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             panel2.Hide();
             openChildForm(new cartiForm());
-            hideSubMenu();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
             panel2.Hide();
             openChildForm(new cartiLimbaForm());
-            hideSubMenu();
         }
 
         private void btnMaximal_Click(object sender, EventArgs e)
         {
             panel2.Hide();
             openChildForm(new furnMax());
-            hideSubMenu();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            panel2.Hide();
+            openChildForm(new pretTotal());
         }
     }
 }
