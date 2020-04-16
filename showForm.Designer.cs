@@ -74,7 +74,7 @@
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Location = new System.Drawing.Point(0, 468);
+            this.button7.Location = new System.Drawing.Point(0, 518);
             this.button7.Name = "button7";
             this.button7.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.button7.Size = new System.Drawing.Size(250, 50);
@@ -90,7 +90,7 @@
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(0, 418);
+            this.button6.Location = new System.Drawing.Point(0, 468);
             this.button6.Name = "button6";
             this.button6.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.button6.Size = new System.Drawing.Size(250, 50);
@@ -106,7 +106,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(0, 368);
+            this.button1.Location = new System.Drawing.Point(0, 418);
             this.button1.Name = "button1";
             this.button1.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.button1.Size = new System.Drawing.Size(250, 50);
@@ -122,7 +122,7 @@
             this.btnMaximal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMaximal.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.btnMaximal.ForeColor = System.Drawing.Color.White;
-            this.btnMaximal.Location = new System.Drawing.Point(0, 318);
+            this.btnMaximal.Location = new System.Drawing.Point(0, 368);
             this.btnMaximal.Name = "btnMaximal";
             this.btnMaximal.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnMaximal.Size = new System.Drawing.Size(250, 50);
@@ -140,7 +140,7 @@
             this.panelTabele.Controls.Add(this.button2);
             this.panelTabele.Controls.Add(this.button4);
             this.panelTabele.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTabele.Location = new System.Drawing.Point(0, 150);
+            this.panelTabele.Location = new System.Drawing.Point(0, 200);
             this.panelTabele.Name = "panelTabele";
             this.panelTabele.Size = new System.Drawing.Size(250, 168);
             this.panelTabele.TabIndex = 14;
@@ -221,7 +221,7 @@
             this.btnTabele.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTabele.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.btnTabele.ForeColor = System.Drawing.Color.White;
-            this.btnTabele.Location = new System.Drawing.Point(0, 100);
+            this.btnTabele.Location = new System.Drawing.Point(0, 150);
             this.btnTabele.Name = "btnTabele";
             this.btnTabele.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnTabele.Size = new System.Drawing.Size(250, 50);
@@ -237,7 +237,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(250, 100);
+            this.panel1.Size = new System.Drawing.Size(250, 150);
             this.panel1.TabIndex = 10;
             // 
             // pictureBox2
@@ -245,7 +245,7 @@
             this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(55, 7);
+            this.pictureBox2.Location = new System.Drawing.Point(55, 32);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(131, 87);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -259,7 +259,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(250, 481);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(797, 100);
+            this.panel2.Size = new System.Drawing.Size(872, 100);
             this.panel2.TabIndex = 13;
             // 
             // panelChildForm
@@ -268,7 +268,7 @@
             this.panelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelChildForm.Location = new System.Drawing.Point(250, 0);
             this.panelChildForm.Name = "panelChildForm";
-            this.panelChildForm.Size = new System.Drawing.Size(797, 481);
+            this.panelChildForm.Size = new System.Drawing.Size(872, 481);
             this.panelChildForm.TabIndex = 14;
             // 
             // showForm
@@ -276,12 +276,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1047, 581);
+            this.ClientSize = new System.Drawing.Size(1122, 581);
             this.Controls.Add(this.panelChildForm);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panelSideMenu);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MinimumSize = new System.Drawing.Size(972, 628);
+            this.IsMdiContainer = true;
+            this.MinimumSize = new System.Drawing.Size(1065, 628);
             this.Name = "showForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Afișare";

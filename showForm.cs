@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Threading;
 
 namespace Bookstore
 {
@@ -18,16 +19,13 @@ namespace Bookstore
             InitializeComponent();
         }
 
-        // Database connection
-        // SqlConnection sqlcon = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\School\Anul III\Practica Anul III\bookstore - application\Bookstore.mdf;Integrated Security=True");
-
         #region Design
 
-        private Form activeForm = null;
-        private void openChildForm(Form childForm)
+        public Form activeForm = null;
+        public void openChildForm(Form childForm)
         {
             if (activeForm != null)
-                activeForm.Close();
+                activeForm.BringToFront();
             activeForm = childForm;
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
@@ -38,10 +36,12 @@ namespace Bookstore
             childForm.Show();
         }
 
+
+
         private void openChildFormPanel2(Form childForm)
         {
             if (activeForm != null)
-                activeForm.Close();
+                activeForm.BringToFront();
             activeForm = childForm;
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
@@ -137,12 +137,12 @@ namespace Bookstore
         private void button4_Click(object sender, EventArgs e)
         {
             openChildForm(new cartiForm());
-
             hideSubMenu();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
+            openChildForm(new cartiLimbaForm());
             openChildFormPanel2(new cartiLimbaFormSearch());
             hideSubMenu();
         }
