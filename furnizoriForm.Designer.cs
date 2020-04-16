@@ -82,6 +82,7 @@
             this.dataGridView1.RowTemplate.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(872, 481);
             this.dataGridView1.TabIndex = 4;
+            this.Font = new System.Drawing.Font("Segoe UI Semibold", 11F);
             // 
             // furnizoriForm
             // 
