@@ -36,6 +36,7 @@ create table Carti
 	,denumireCarte nvarchar(100) UNIQUE -- Denumirea cartii
     ,idAutor int foreign key (idAutor) references Autori -- Face legatura cu tabelul Autori
     ,anCarte nvarchar(100) -- Anul editarii cartii
+	,limbaCarte nvarchar(100) -- Limba cartii
     ,pretCarte int -- Pretul cartii
 )
 create table Users
@@ -60,12 +61,12 @@ INSERT INTO Autori (numeAutor, dataAutor, genAutor) VALUES
 	,('Veronica Micle', '22.04.1850', 'F')
 	,('Ion Pillat', '31.03.1891', 'M')
 GO
-INSERT INTO Carti (idFurnizor, denumireCarte, idAutor, anCarte, pretCarte) VALUES
-    (3, N'Amintiri din copilărie', 1, '1892', 52)
-    ,(1, N'Luceafărul', 2,'1883', 86)
-	,(4, N'Letopisețul Țării Moldovei', 3, 1661, 138)
-	,(5, N'Viața Lumii', 3, 1672, 102)
-	,(2, N'Plimbarea de mai în Iaşi', 4, 1872, 83)
+INSERT INTO Carti (idFurnizor, denumireCarte, idAutor, anCarte, limbaCarte, pretCarte) VALUES
+    (3, N'Amintiri din copilărie', 1, '1892', N'Română', 52)
+    ,(1, N'Luceafărul', 2,'1883', N'Română', 86)
+	,(4, N'Letopisețul Țării Moldovei', 3, 1661, N'Română', 138)
+	,(5, N'Viața Lumii', 3, 1672, N'Română', 102)
+	,(2, N'Plimbarea de mai în Iaşi', 4, 1872, N'Română', 83)
 GO
 INSERT INTO Users (username, password) VALUES 
     ('admin', 'admin')
