@@ -332,6 +332,7 @@
             this.Name = "showForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Afișare";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.showForm_FormClosed);
             this.panelSideMenu.ResumeLayout(false);
             this.panelTabele.ResumeLayout(false);
             this.panel1.ResumeLayout(false);

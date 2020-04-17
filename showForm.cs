@@ -120,5 +120,12 @@ namespace Bookstore
             panel2.Hide();
             openChildForm(new listaRomana());
         }
+
+        private void showForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Hide();
+            menuForm form = new menuForm();
+            form.Show();
+        }
     }
 }
