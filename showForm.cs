@@ -114,5 +114,11 @@ namespace Bookstore
             panel2.Hide();
             openChildForm(new listaAutor());
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            panel2.Hide();
+            openChildForm(new listaRomana());
+        }
     }
 }
