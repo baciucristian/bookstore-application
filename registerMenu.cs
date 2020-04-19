@@ -61,5 +61,12 @@ namespace Bookstore
             panel2.Hide();
             openChildForm(new newBook());
         }
+
+        private void registerMenu_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Hide();
+            menuForm menuForm = new menuForm(null);
+            menuForm.Show();
+        }
     }
 }
