@@ -80,5 +80,12 @@ namespace Bookstore
         {
             
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            loginForm f = new loginForm();
+            f.Show();
+        }
     }
 }
