@@ -59,7 +59,7 @@ GO
 INSERT INTO Furnizori (denumireFurnizor, tipFurnizor, adresaFurnizor, telefonFurnizor) VALUES 
 	('Editura Arc', 'Editura', 'str. M. Eminescu 23', '067123376')
     ,('Editura Cartier', 'Editura', 'str. Sarmisezetusa 87/B', '067233479')
-    ,('Jian Catalin', 'Persoana', 'str. Bucuriei 1', '063829874')
+    ,('Jian Cătălin', 'Persoana', 'str. Bucuriei 1', '063829874')
 	,(N'Negară Maxim', 'Persoana', 'str. Grigore Vieru 54', '067124492')
 	,('Editura Litera', 'Editura', 'str. M. Eminescu 90', '067298349')
 GO
