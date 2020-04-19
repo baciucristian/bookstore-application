@@ -30,9 +30,10 @@ namespace Bookstore
             // Database connection
             SqlConnection sqlcon = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\School\Anul III\Practica Anul III\bookstore-application\Bookstore.mdf;Integrated Security=True");
             
-            string query = "SELECT denumireCarte, numeAutor, anCarte, limbaCarte, CONVERT(varchar(100), pretCarte) AS pretCarte, denumireFurnizor, CONVERT(varchar(100), nrExemplare) AS nrExemplare FROM Carti ";
+            string query = "SELECT denumireCarte, numeAutor, anCarte, numeLimba, CONVERT(varchar(100), pretCarte) AS pretCarte, denumireFurnizor, CONVERT(varchar(100), nrExemplare) AS nrExemplare FROM Carti ";
             query += "INNER JOIN Autori ON Carti.idAutor = Autori.idAutor ";
-            query += "INNER JOIN Furnizori ON Carti.idFurnizor = Furnizori.idFurnizor";
+            query += "INNER JOIN Furnizori ON Carti.idFurnizor = Furnizori.idFurnizor ";
+            query += "INNER JOIN Limbi ON Carti.idLimba = Limbi.idLimba";
             SqlDataAdapter sda = new SqlDataAdapter(query, sqlcon);
             sda.Fill(dataTable);
             dataGridView1.DataSource = dataTable;
