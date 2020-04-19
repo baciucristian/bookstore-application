@@ -145,6 +145,24 @@
     <Compile Include="menuForm.designer.cs">
       <DependentUpon>menuForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="newAuthor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newAuthor.Designer.cs">
+      <DependentUpon>newAuthor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newBook.Designer.cs">
+      <DependentUpon>newBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newFurnizor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newFurnizor.Designer.cs">
+      <DependentUpon>newFurnizor.cs</DependentUpon>
+    </Compile>
     <Compile Include="pretTotal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -158,6 +176,12 @@
     </Compile>
     <Compile Include="registerForm.Designer.cs">
       <DependentUpon>registerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="registerMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="registerMenu.Designer.cs">
+      <DependentUpon>registerMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="showForm.cs">
       <SubType>Form</SubType>
@@ -193,6 +217,15 @@
     <EmbeddedResource Include="menuForm.resx">
       <DependentUpon>menuForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="newAuthor.resx">
+      <DependentUpon>newAuthor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newBook.resx">
+      <DependentUpon>newBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newFurnizor.resx">
+      <DependentUpon>newFurnizor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="pretTotal.resx">
       <DependentUpon>pretTotal.cs</DependentUpon>
     </EmbeddedResource>
@@ -208,6 +241,9 @@
     </Compile>
     <EmbeddedResource Include="registerForm.resx">
       <DependentUpon>registerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="registerMenu.resx">
+      <DependentUpon>registerMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="showForm.resx">
       <DependentUpon>showForm.cs</DependentUpon>

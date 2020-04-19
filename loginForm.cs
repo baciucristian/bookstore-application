@@ -42,7 +42,7 @@ namespace Bookstore
                 if (dt.Rows.Count == 1)
                 {
                     this.Hide();
-                    menuForm f5 = new menuForm();
+                    menuForm f5 = new menuForm(username);
                     f5.Show();
                 }
                 else

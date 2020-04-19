@@ -12,9 +12,11 @@ namespace Bookstore
 {
     public partial class menuForm : Form
     {
-        public menuForm()
+        string username;
+        public menuForm(string loginUsername)
         {
             InitializeComponent();
+            username = loginUsername;
         }
         private bool dragging = false;
         private Point dragCursorPoint;
@@ -62,14 +64,21 @@ namespace Bookstore
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
-            //this.Hide();
-            //excursieForm f2 = new excursieForm();
-            //f2.Show();
+            if (username == "admin")
+            {
+                this.Hide();
+                registerMenu f = new registerMenu();
+                f.Show();
+            }
+            else
+                MessageBox.Show("Doar administratorul poate accesa această funcție!", "Eroare",
+                                     MessageBoxButtons.OK,
+                                     MessageBoxIcon.Error);
         }
 
         private void bunifuGradientPanel1_Paint(object sender, PaintEventArgs e)
         {
-
+            
         }
     }
 }

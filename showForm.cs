@@ -62,7 +62,7 @@ namespace Bookstore
             if (e.KeyCode == Keys.Escape)
             {
                 this.Hide();
-                menuForm menuForm = new menuForm();
+                menuForm menuForm = new menuForm(null);
                 menuForm.Show();
             }
         }
@@ -124,7 +124,7 @@ namespace Bookstore
         private void showForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             this.Hide();
-            menuForm form = new menuForm();
+            menuForm form = new menuForm(null);
             form.Show();
         }
     }
