@@ -20,7 +20,7 @@ namespace Bookstore
 
         private void bunifuFlatButton1_Click(object sender, EventArgs e)
         {
-            String selectedValue = bunifuDropdown1.selectedValue;
+            String selectedValue = bunifuDropdown1.Text;
             String denumire = textBox1.Text;
             String adresa = textBox2.Text;
             String telefon = textBox3.Text;
@@ -68,7 +68,7 @@ namespace Bookstore
 
         private void newFurnizor_Load(object sender, EventArgs e)
         {
-            bunifuDropdown1.selectedIndex = 0;
+            bunifuDropdown1.SelectedIndex = 0;
         }
     }
 }

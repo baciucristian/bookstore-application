@@ -34,27 +34,26 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.bunifuDropdown1 = new Bunifu.Framework.UI.BunifuDropdown();
             this.label4 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.bunifuDropdown2 = new Bunifu.Framework.UI.BunifuDropdown();
             this.label5 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
             this.label6 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
-            this.bunifuDropdown3 = new Bunifu.Framework.UI.BunifuDropdown();
+            this.textBox1 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
+            this.bunifuDropdown1 = new System.Windows.Forms.ComboBox();
+            this.bunifuDropdown2 = new System.Windows.Forms.ComboBox();
+            this.bunifuDropdown3 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
@@ -120,7 +119,7 @@
             this.bunifuFlatButton1.IconVisible = true;
             this.bunifuFlatButton1.IconZoom = 27D;
             this.bunifuFlatButton1.IsTab = false;
-            this.bunifuFlatButton1.Location = new System.Drawing.Point(584, 394);
+            this.bunifuFlatButton1.Location = new System.Drawing.Point(579, 395);
             this.bunifuFlatButton1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.bunifuFlatButton1.Name = "bunifuFlatButton1";
             this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
@@ -146,19 +145,6 @@
             this.label2.Size = new System.Drawing.Size(133, 35);
             this.label2.TabIndex = 81;
             this.label2.Text = "Denumire:";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI Semilight", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(242, 35);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(572, 36);
-            this.textBox1.TabIndex = 82;
             // 
             // panel1
             // 
@@ -186,28 +172,11 @@
             // 
             this.panel3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Location = new System.Drawing.Point(65, 121);
+            this.panel3.Location = new System.Drawing.Point(67, 121);
             this.panel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(750, 3);
             this.panel3.TabIndex = 90;
-            // 
-            // bunifuDropdown1
-            // 
-            this.bunifuDropdown1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.bunifuDropdown1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuDropdown1.BorderRadius = 3;
-            this.bunifuDropdown1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuDropdown1.ForeColor = System.Drawing.Color.White;
-            this.bunifuDropdown1.Items = new string[0];
-            this.bunifuDropdown1.Location = new System.Drawing.Point(242, 94);
-            this.bunifuDropdown1.Margin = new System.Windows.Forms.Padding(11, 17, 11, 17);
-            this.bunifuDropdown1.Name = "bunifuDropdown1";
-            this.bunifuDropdown1.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuDropdown1.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.bunifuDropdown1.selectedIndex = -1;
-            this.bunifuDropdown1.Size = new System.Drawing.Size(573, 27);
-            this.bunifuDropdown1.TabIndex = 41;
             // 
             // label4
             // 
@@ -231,23 +200,6 @@
             this.panel4.Size = new System.Drawing.Size(750, 3);
             this.panel4.TabIndex = 93;
             // 
-            // bunifuDropdown2
-            // 
-            this.bunifuDropdown2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.bunifuDropdown2.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuDropdown2.BorderRadius = 3;
-            this.bunifuDropdown2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuDropdown2.ForeColor = System.Drawing.Color.White;
-            this.bunifuDropdown2.Items = new string[0];
-            this.bunifuDropdown2.Location = new System.Drawing.Point(242, 146);
-            this.bunifuDropdown2.Margin = new System.Windows.Forms.Padding(11, 17, 11, 17);
-            this.bunifuDropdown2.Name = "bunifuDropdown2";
-            this.bunifuDropdown2.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuDropdown2.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.bunifuDropdown2.selectedIndex = -1;
-            this.bunifuDropdown2.Size = new System.Drawing.Size(572, 27);
-            this.bunifuDropdown2.TabIndex = 91;
-            // 
             // label5
             // 
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -264,7 +216,7 @@
             // 
             this.panel5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel5.BackColor = System.Drawing.Color.White;
-            this.panel5.Location = new System.Drawing.Point(67, 279);
+            this.panel5.Location = new System.Drawing.Point(67, 277);
             this.panel5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(750, 3);
@@ -298,33 +250,20 @@
             this.numericUpDown1.BackColor = System.Drawing.Color.SeaGreen;
             this.numericUpDown1.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
             this.numericUpDown1.ForeColor = System.Drawing.Color.White;
-            this.numericUpDown1.Location = new System.Drawing.Point(242, 250);
+            this.numericUpDown1.Location = new System.Drawing.Point(242, 247);
             this.numericUpDown1.Maximum = new decimal(new int[] {
             900,
             0,
             0,
             0});
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(88, 30);
+            this.numericUpDown1.Size = new System.Drawing.Size(575, 30);
             this.numericUpDown1.TabIndex = 103;
-            this.numericUpDown1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.numericUpDown1.Value = new decimal(new int[] {
             100,
             0,
             0,
             0});
-            // 
-            // label8
-            // 
-            this.label8.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 14F);
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(337, 247);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(65, 32);
-            this.label8.TabIndex = 104;
-            this.label8.Text = "MDL";
             // 
             // label9
             // 
@@ -342,7 +281,7 @@
             // 
             this.panel6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel6.BackColor = System.Drawing.Color.White;
-            this.panel6.Location = new System.Drawing.Point(69, 328);
+            this.panel6.Location = new System.Drawing.Point(67, 328);
             this.panel6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(750, 3);
@@ -354,7 +293,7 @@
             this.numericUpDown2.BackColor = System.Drawing.Color.SeaGreen;
             this.numericUpDown2.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
             this.numericUpDown2.ForeColor = System.Drawing.Color.White;
-            this.numericUpDown2.Location = new System.Drawing.Point(242, 299);
+            this.numericUpDown2.Location = new System.Drawing.Point(242, 298);
             this.numericUpDown2.Maximum = new decimal(new int[] {
             2021,
             0,
@@ -366,9 +305,8 @@
             0,
             0});
             this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(88, 30);
+            this.numericUpDown2.Size = new System.Drawing.Size(575, 30);
             this.numericUpDown2.TabIndex = 107;
-            this.numericUpDown2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.numericUpDown2.Value = new decimal(new int[] {
             2001,
             0,
@@ -391,7 +329,7 @@
             // 
             this.panel8.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel8.BackColor = System.Drawing.Color.White;
-            this.panel8.Location = new System.Drawing.Point(69, 382);
+            this.panel8.Location = new System.Drawing.Point(67, 382);
             this.panel8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(750, 3);
@@ -410,26 +348,64 @@
             0,
             0});
             this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(88, 30);
+            this.numericUpDown3.Size = new System.Drawing.Size(575, 30);
             this.numericUpDown3.TabIndex = 110;
-            this.numericUpDown3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.textBox1.BackColor = System.Drawing.Color.SeaGreen;
+            this.textBox1.BorderColor = System.Drawing.Color.SeaGreen;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Font = new System.Drawing.Font("Segoe UI Semilight", 12F);
+            this.textBox1.ForeColor = System.Drawing.Color.White;
+            this.textBox1.Location = new System.Drawing.Point(242, 42);
+            this.textBox1.MaxLength = 200;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(575, 27);
+            this.textBox1.TabIndex = 112;
+            // 
+            // bunifuDropdown1
+            // 
+            this.bunifuDropdown1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.bunifuDropdown1.BackColor = System.Drawing.Color.SeaGreen;
+            this.bunifuDropdown1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.bunifuDropdown1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bunifuDropdown1.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuDropdown1.ForeColor = System.Drawing.Color.White;
+            this.bunifuDropdown1.FormattingEnabled = true;
+            this.bunifuDropdown1.Location = new System.Drawing.Point(242, 89);
+            this.bunifuDropdown1.Name = "bunifuDropdown1";
+            this.bunifuDropdown1.Size = new System.Drawing.Size(575, 31);
+            this.bunifuDropdown1.TabIndex = 113;
+            // 
+            // bunifuDropdown2
+            // 
+            this.bunifuDropdown2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.bunifuDropdown2.BackColor = System.Drawing.Color.SeaGreen;
+            this.bunifuDropdown2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.bunifuDropdown2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bunifuDropdown2.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuDropdown2.ForeColor = System.Drawing.Color.White;
+            this.bunifuDropdown2.FormattingEnabled = true;
+            this.bunifuDropdown2.Location = new System.Drawing.Point(242, 141);
+            this.bunifuDropdown2.Name = "bunifuDropdown2";
+            this.bunifuDropdown2.Size = new System.Drawing.Size(575, 31);
+            this.bunifuDropdown2.TabIndex = 114;
             // 
             // bunifuDropdown3
             // 
             this.bunifuDropdown3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.bunifuDropdown3.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuDropdown3.BorderRadius = 3;
-            this.bunifuDropdown3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuDropdown3.BackColor = System.Drawing.Color.SeaGreen;
+            this.bunifuDropdown3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.bunifuDropdown3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bunifuDropdown3.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuDropdown3.ForeColor = System.Drawing.Color.White;
-            this.bunifuDropdown3.Items = new string[0];
-            this.bunifuDropdown3.Location = new System.Drawing.Point(242, 197);
-            this.bunifuDropdown3.Margin = new System.Windows.Forms.Padding(11, 17, 11, 17);
+            this.bunifuDropdown3.FormattingEnabled = true;
+            this.bunifuDropdown3.Location = new System.Drawing.Point(242, 193);
             this.bunifuDropdown3.Name = "bunifuDropdown3";
-            this.bunifuDropdown3.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuDropdown3.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.bunifuDropdown3.selectedIndex = -1;
-            this.bunifuDropdown3.Size = new System.Drawing.Size(572, 27);
-            this.bunifuDropdown3.TabIndex = 111;
+            this.bunifuDropdown3.Size = new System.Drawing.Size(575, 31);
+            this.bunifuDropdown3.TabIndex = 115;
             // 
             // newBook
             // 
@@ -438,27 +414,26 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
             this.ClientSize = new System.Drawing.Size(872, 581);
             this.Controls.Add(this.bunifuDropdown3);
+            this.Controls.Add(this.bunifuDropdown2);
+            this.Controls.Add(this.bunifuDropdown1);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.numericUpDown3);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.numericUpDown2);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.bunifuDropdown2);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.bunifuDropdown1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.bunifuFlatButton1);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -482,26 +457,25 @@
         private System.Windows.Forms.Panel panel2;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel3;
-        private Bunifu.Framework.UI.BunifuDropdown bunifuDropdown1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel4;
-        private Bunifu.Framework.UI.BunifuDropdown bunifuDropdown2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.NumericUpDown numericUpDown2;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.NumericUpDown numericUpDown3;
-        private Bunifu.Framework.UI.BunifuDropdown bunifuDropdown3;
+        private WindowsFormsControlLibrary1.BunifuCustomTextbox textBox1;
+        private System.Windows.Forms.ComboBox bunifuDropdown1;
+        private System.Windows.Forms.ComboBox bunifuDropdown2;
+        private System.Windows.Forms.ComboBox bunifuDropdown3;
     }
 }

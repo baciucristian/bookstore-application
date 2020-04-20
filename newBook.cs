@@ -24,9 +24,9 @@ namespace Bookstore
         private void bunifuFlatButton1_Click(object sender, EventArgs e)
         {
             String denumire = textBox1.Text;
-            int provider = bunifuDropdown1.selectedIndex + 1;
-            int author = bunifuDropdown2.selectedIndex + 1;
-            int language = bunifuDropdown3.selectedIndex + 1;
+            int provider = bunifuDropdown1.SelectedIndex + 1;
+            int author = bunifuDropdown2.SelectedIndex + 1;
+            int language = bunifuDropdown3.SelectedIndex + 1;
             decimal price = numericUpDown1.Value;
             decimal year = numericUpDown2.Value;
             decimal nrExemplare = numericUpDown3.Value;
@@ -78,7 +78,7 @@ namespace Bookstore
 
             foreach (DataRow dr in dt.Rows)
             {
-                bunifuDropdown1.AddItem(dr["denumireFurnizor"].ToString());
+                bunifuDropdown1.Items.Add(dr["denumireFurnizor"].ToString());
             }
 
             // bunifuDropdown2 author
@@ -89,7 +89,7 @@ namespace Bookstore
 
             foreach (DataRow dr in dt2.Rows)
             {
-                bunifuDropdown2.AddItem(dr["numeAutor"].ToString());
+                bunifuDropdown2.Items.Add(dr["numeAutor"].ToString());
             }
 
             // bunifuDropdown3 languages
@@ -100,12 +100,12 @@ namespace Bookstore
 
             foreach (DataRow dr in dt3.Rows)
             {
-                bunifuDropdown3.AddItem(dr["numeLimba"].ToString());
+                bunifuDropdown3.Items.Add(dr["numeLimba"].ToString());
             }
 
-            bunifuDropdown1.selectedIndex = 0;
-            bunifuDropdown2.selectedIndex = 0;
-            bunifuDropdown3.selectedIndex = 0;
+            bunifuDropdown1.SelectedIndex = 0;
+            bunifuDropdown2.SelectedIndex = 0;
+            bunifuDropdown3.SelectedIndex = 0;
         }
     }
 }
