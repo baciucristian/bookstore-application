@@ -14,9 +14,11 @@ namespace Bookstore
 {
     public partial class registerMenu : Form
     {
-        public registerMenu()
+        string username;
+        public registerMenu(string loginUsername)
         {
             InitializeComponent();
+            username = loginUsername;
         }
 
         public Form activeForm = null;
@@ -65,7 +67,7 @@ namespace Bookstore
         private void registerMenu_FormClosed(object sender, FormClosedEventArgs e)
         {
             this.Hide();
-            menuForm menuForm = new menuForm(null);
+            menuForm menuForm = new menuForm(username);
             menuForm.Show();
         }
     }

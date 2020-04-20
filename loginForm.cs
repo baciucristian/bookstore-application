@@ -27,7 +27,7 @@ namespace Bookstore
             // Validation of data
             if (username == "" || password == "")
             {
-                MessageBox.Show("Nu puteti lăsa câmpuri goale!", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Nu puteți lăsa câmpuri goale!", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {

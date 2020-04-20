@@ -58,7 +58,7 @@ namespace Bookstore
         private void pictureBox3_Click(object sender, EventArgs e)
         {
             this.Hide();
-            showForm f = new showForm();
+            showForm f = new showForm(username);
             f.Show();
         }
 
@@ -67,7 +67,7 @@ namespace Bookstore
             if (username == "admin")
             {
                 this.Hide();
-                registerMenu f = new registerMenu();
+                registerMenu f = new registerMenu(username);
                 f.Show();
             }
             else
@@ -93,7 +93,7 @@ namespace Bookstore
             if (username == "admin")
             {
                 this.Hide();
-                deleteMenu f = new deleteMenu();
+                deleteMenu f = new deleteMenu(username);
                 f.Show();
             }
             else

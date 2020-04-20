@@ -14,9 +14,11 @@ namespace Bookstore
 {
     public partial class showForm : Form
     {
-        public showForm()
+        string username;
+        public showForm(string loginUsername)
         {
             InitializeComponent();
+            username = loginUsername;
         }
 
         #region Design
@@ -62,7 +64,7 @@ namespace Bookstore
             if (e.KeyCode == Keys.Escape)
             {
                 this.Hide();
-                menuForm menuForm = new menuForm(null);
+                menuForm menuForm = new menuForm(username);
                 menuForm.Show();
             }
         }
@@ -124,7 +126,7 @@ namespace Bookstore
         private void showForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             this.Hide();
-            menuForm form = new menuForm(null);
+            menuForm form = new menuForm(username);
             form.Show();
         }
     }

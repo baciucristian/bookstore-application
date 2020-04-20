@@ -14,9 +14,11 @@ namespace Bookstore
 {
     public partial class deleteMenu : Form
     {
-        public deleteMenu()
+        string username;
+        public deleteMenu(string loginUsername)
         {
             InitializeComponent();
+            username = loginUsername;
         }
 
         public Form activeForm = null;
@@ -65,7 +67,7 @@ namespace Bookstore
         private void deleteMenu_FormClosed(object sender, FormClosedEventArgs e)
         {
             this.Hide();
-            menuForm menuForm = new menuForm(null);
+            menuForm menuForm = new menuForm(username);
             menuForm.Show();
         }
     }
