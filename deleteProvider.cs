@@ -61,5 +61,16 @@ namespace Bookstore
             pictureBox1.Hide();
             pictureBox2.Hide();
         }
+
+        private void textBox1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                button1.PerformClick();
+
+                // Disable beep sound
+                e.Handled = e.SuppressKeyPress = true;
+            }
+        }
     }
 }
