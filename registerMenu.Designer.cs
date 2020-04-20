@@ -187,7 +187,7 @@
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(562, 37);
+            this.pictureBox1.Location = new System.Drawing.Point(647, 38);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(61, 57);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -200,11 +200,11 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(268, 34);
+            this.label1.Location = new System.Drawing.Point(214, 38);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(288, 59);
+            this.label1.Size = new System.Drawing.Size(427, 59);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Bine ai venit!";
+            this.label1.Text = "Bine ai venit admin!";
             // 
             // registerMenu
             // 
