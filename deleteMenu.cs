@@ -58,6 +58,8 @@ namespace Bookstore
 
         private void button2_Click(object sender, EventArgs e)
         {
+            panel2.Hide();
+            openChildForm(new deleteWhereNumber());
         }
 
         private void deleteMenu_FormClosed(object sender, FormClosedEventArgs e)
