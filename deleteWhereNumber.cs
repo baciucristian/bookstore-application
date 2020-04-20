@@ -22,8 +22,6 @@ namespace Bookstore
         {
             label2.Hide();
             pictureBox1.Hide();
-            pictureBox2.Hide();
-            pictureBox3.Hide();
             // TextBox variable
             string inputNumber = textBox1.Text;
 
@@ -61,6 +59,12 @@ namespace Bookstore
                 // Disable beep sound
                 e.Handled = e.SuppressKeyPress = true;
             }
+        }
+
+        private void deleteWhereNumber_Load(object sender, EventArgs e)
+        {
+            pictureBox2.Hide();
+            pictureBox3.Hide();
         }
     }
 }

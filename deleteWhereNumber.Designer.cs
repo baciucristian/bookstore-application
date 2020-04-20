@@ -176,6 +176,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "deleteWhereNumber";
             this.Text = "deleteWhereNumber";
+            this.Load += new System.EventHandler(this.deleteWhereNumber_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
