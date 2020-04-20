@@ -209,7 +209,7 @@
             this.textBox1.BackColor = System.Drawing.Color.SeaGreen;
             this.textBox1.BorderColor = System.Drawing.Color.SeaGreen;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI Semilight", 12F);
+            this.textBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.Color.White;
             this.textBox1.Location = new System.Drawing.Point(282, 113);
             this.textBox1.MaxLength = 200;
