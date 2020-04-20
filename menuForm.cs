@@ -87,5 +87,19 @@ namespace Bookstore
             loginForm f = new loginForm();
             f.Show();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            if (username == "admin")
+            {
+                this.Hide();
+                deleteMenu f = new deleteMenu();
+                f.Show();
+            }
+            else
+                MessageBox.Show("Doar administratorul poate accesa această funcție!", "Eroare",
+                                     MessageBoxButtons.OK,
+                                     MessageBoxIcon.Error);
+        }
     }
 }
