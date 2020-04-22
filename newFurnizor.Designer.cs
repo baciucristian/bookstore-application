@@ -264,7 +264,7 @@
             this.bunifuDropdown1.Items.AddRange(new object[] {
             "Depozit",
             "Persoană fizică",
-            "Furnizor"});
+            "Editură"});
             this.bunifuDropdown1.Location = new System.Drawing.Point(219, 58);
             this.bunifuDropdown1.Name = "bunifuDropdown1";
             this.bunifuDropdown1.Size = new System.Drawing.Size(592, 31);
