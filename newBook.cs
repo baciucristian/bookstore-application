@@ -40,7 +40,18 @@ namespace Bookstore
                 sda.Fill(dt);
                 if (dt.Rows.Count == 1)
                 {
-                    MessageBox.Show("Carte existentă!", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    string updateQuery = "UPDATE Carti SET nrExemplare = nrExemplare + @inputNumber WHERE denumireCarte = @inputBook";
+                    using (SqlCommand updateCommand = new SqlCommand(updateQuery, sqlcon))
+                    {
+                        updateCommand.Parameters.AddWithValue("@inputNumber", nrExemplare);
+                        updateCommand.Parameters.AddWithValue("@inputBook", denumire);
+
+                        sqlcon.Open();
+                        updateCommand.ExecuteNonQuery();
+
+                        MessageBox.Show("Fiindcă cartea există, doar nr. de exemplare s-a adăugat!", "Ai avut succes!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        textBox1.Clear();
+                    }
                 } else
                 {
                     // Insert query
