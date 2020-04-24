@@ -1,4 +1,4 @@
-﻿# Bookstore Desktop App
+﻿# Bookstore Desktop App 📚
 
 **A desktop application to manage a bookstore.**
 
