@@ -4,9 +4,9 @@
 
 **IMPORTANT:** Change the ```Connection String``` to your own path.
 
-Application language: *Romanian* | College project @ 2020
+Application language: Romanian | College project @ 2020
 
-## WORK IN PROGRESS
+![Untitled-1](https://user-images.githubusercontent.com/49842769/80212654-8ecc3d00-8640-11ea-9f43-02e04076fb46.png)
 
 ### Tehnologies used
 * C#
